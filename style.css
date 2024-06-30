@@ -1,0 +1,325 @@
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+body {
+    display: flex;
+    width: 40vw;
+    height:fit-content;
+    border: 2px solid black;
+    padding: 15px;
+
+}
+
+
+.left {
+    width:30%;
+    max-height:fit-content;
+
+}
+
+.right {
+    margin-left: 30px;
+    width:60%;
+    min-height: fit-content;
+
+}
+.down { 
+    background-color:rgba(0, 0, 0, 0.795);
+    padding: 0px 15px 15px 15px;
+}
+.down > div > h2 {
+    color: white;
+    border-bottom: 1.5px solid white;
+    font-size: 0.85rem;
+    margin-top: 15px;
+} 
+.right > div > h2 {
+    color:rgb(63, 63, 238);
+    border-bottom: 1.5px solid black;
+    font-size: 0.6rem;
+    margin-top: 15px;
+} 
+/* photo */
+.photo {
+    display:flex;
+    flex-direction: column;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+}
+.photo img {
+width:150px;
+height: 150px;
+border-radius: 50%;
+padding: 10px;
+
+}
+
+.photo input{
+    width:90%;
+    font-size: 0.85rem;
+    margin-bottom: 9px;
+    color: white;
+    background-color:transparent;
+    border: none;
+    text-align: center;
+}
+.photo > ::placeholder{
+    color: white;
+}
+.photo .second_photo_input {
+    font-size: 0.47rem;
+}
+
+.photo_link {
+    display: flex;
+    justify-items:right;
+    color: white;
+}
+.photo_link a {
+    color: white;
+    text-decoration: none;
+}
+ 
+/*contact details */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact > input {
+    width:80%;
+    margin-left: 20px;
+}
+.contact > label {
+    margin-left: 20px;
+    color:white;
+}
+
+/* skills */
+.skill p {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 0.45rem;
+    color: white;
+}
+.skill > div {
+    margin-left: 20px;
+}
+
+.container {
+    width:80%;
+    background-color: #ccc;
+    border-radius: 2px;
+
+}
+#skill_1 {
+    width:90%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: blue;
+}
+#skill_2 {
+    width:80%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: blue;
+}
+#skill_3 {
+    width:30%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: blue;
+}
+#skill_4 {
+    width:80%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: blue;
+}
+#skill_5 {
+    width:70%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: blue;
+}
+#skill_6 {
+    width:80%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: blue;
+}
+#skill_7 {
+    width:40%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: blue;
+}
+
+/* certificate */
+
+.certificate {
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate > a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.45rem;
+
+}
+
+/* objective */
+
+.objective p {
+    font-size:0.45rem;
+    margin-top: 10px;
+}
+
+/* workexperence */
+
+.work_experence > div > ::placeholder{
+    color:black;
+    font-size: 0.5rem;
+    font-weight: 700;
+    
+}
+.work_experence > div > input {
+    font-size:0.45rem;
+    border:none;
+    width:40%;
+}
+.work_top {
+    margin-top: 10px;
+}
+
+.work_experence > div > p {
+    margin-bottom: 15px;
+}
+
+.work_experence {
+    display:flex;
+    flex-direction: column;
+}
+.work_2 {
+    margin-left: 40px;
+}
+.work_2 p {
+    font-size:0.45rem;
+}
+.fas {
+    margin-right: 20px;
+}
+
+/* projects */
+
+.project > p, .project > input {
+    margin-left: 40px; 
+    font-size:0.45rem;
+    border:none;
+    width:40%;
+}
+.project > div > input {
+    font-size:0.45rem;
+    border:none;
+    width:40%;
+}
+.project > div > ::placeholder{
+    color:black;
+    font-size: 0.5rem;
+    font-weight: 600;
+}
+.project > ::placeholder{
+    color:black;
+    font-size: 0.5rem;
+    font-weight: 600;
+}
+.project_top {
+    margin-top: 10px;
+}
+
+/* education */
+
+.education_top {
+    margin-top: 10px;
+}
+
+.education > p, .education > input {
+    margin-left: 40px; 
+    font-size:0.45rem;
+    border:none;
+    width:40%;
+}
+.education > div > input {
+    font-size:0.45rem;
+    border:none;
+    width:40%;
+}
+.education > div > ::placeholder{
+    color:black;
+    font-size: 0.5rem;
+    font-weight: 600;
+}
+.education > ::placeholder{
+    color:black;
+    font-size: 0.5rem;
+        font-weight: 600;
+}
+
+/* media query */
+
+@media (max-width:500px) {
+    body {
+     width: 100vw;
+     display: block;
+ 
+    }
+    .left {
+     width:70%;
+     max-height:fit-content;
+    } 
+}
+@media (min-width:500px) and (max-width:600px){
+    body {
+     width: 100vw;
+    }
+    .left {
+     width:45%;
+     max-height:fit-content;
+    } 
+}
+@media (min-width:600px) and (max-width:800px) {
+    body {
+     width: 80vw;
+ 
+    }
+    .left {
+     width:40%;
+     max-height:fit-content;
+    } 
+}
+@media (min-width:800px) and (max-width:1100px){
+    body {
+     width: 55vw;
+ 
+    }
+    .left {
+     width:40%;
+     max-height:fit-content;
+    } 
+}
+@media (min-width:1100px){
+    body {
+     width: 50vw;
+ 
+    }
+    .left {
+     width:30%;
+     max-height:fit-content;
+    } 
+}
